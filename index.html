@@ -62,7 +62,7 @@
       <div class="row2"><select id="prov"></select><select id="city" aria-label="시·군·구"></select></div>
       <button class="act" id="go" type="submit">별자리 지도 만들기</button>
       <div class="err" id="err" role="alert"></div>
-      <div class="note">입력한 생년월일은 저장하거나 어디로 보내지 않아요. 이 브라우저 안에서만 계산해요. 시각을 모르면 그날 밤 10시의 하늘로 그려요.</div>
+      <div class="note">입력한 생년월일은 저장하거나 어디로 보내지 않아요. 이 브라우저 안에서만 계산하고, 방문 횟수 통계(페이지 주소·제목, 이전 페이지, 같은 방문자 구분(최대 8시간), 브라우저·운영체제 종류, 화면 너비)만 수집해요. 통계는 쿠키를 쓰지 않는 GoatCounter로 집계해요. 시각을 모르면 그날 밤 10시의 하늘로 그려요.</div>
     </form>
     <div>
       <div class="empty" id="empty">왼쪽에 생년월일을 넣고 <b>별자리 지도 만들기</b>를 눌러 보세요.</div>
@@ -484,5 +484,6 @@ $('share').onclick = async () => { try { await navigator.clipboard.writeText(loc
 })();
 window.__sky = {compute, makeFrame, planetRaDec, moonRaDec, sunRaDec, precess, jdOf, kstOffset};
 </script>
+<script data-goatcounter="https://hayanfog.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
